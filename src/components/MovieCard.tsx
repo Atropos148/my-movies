@@ -12,8 +12,8 @@ const useStyles = makeStyles({
 })
 
 interface MovieProps {
-  name: string;
-  year: number;
+  title: string;
+  year: string;
 }
 
 export default function MovieCard(props: MovieProps) {
@@ -21,7 +21,7 @@ export default function MovieCard(props: MovieProps) {
   return (
     <Card className={classes.root} >
       <CardContent>
-        <p>{props.name}</p>
+        <p>{props.title}</p>
         <p>{props.year}</p>
       </CardContent>
       <CardActions>

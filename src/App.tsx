@@ -28,7 +28,7 @@ export default function App() {
         <FavoritesPage />
       </Route>
 
-      <Route path='/results'>
+      <Route path='/search'>
         <SearchResultsPage />
       </Route>
     </Container>

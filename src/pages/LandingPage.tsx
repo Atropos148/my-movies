@@ -10,7 +10,7 @@ export default function FavoritesPage() {
     <Container maxWidth='sm'>
       <NavBar />
       <Box my={10}>
-        <MovieCard name="Tha Matrix" year={2000} />
+        <MovieCard title="Tha Matrix" year='2000' />
       </Box>
     </Container>
   );
