@@ -10,13 +10,18 @@ const useStyles = makeStyles({
   }
 })
 
-export default function MovieCard() {
+interface MovieProps {
+  name: string;
+  year: number;
+}
+
+export default function MovieCard(props: MovieProps) {
   const classes = useStyles();
   return (
     <Card className={classes.root} >
       <CardContent>
-        <p>Movie Name</p>
-        <p>Release Year</p>
+        <p>{props.name}</p>
+        <p>{props.year}</p>
       </CardContent>
       <CardActions>
         <Button>Favorite</Button>
