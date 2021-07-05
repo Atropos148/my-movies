@@ -1,6 +1,5 @@
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
 
 import NavBar from '../components/NavBar';
 import MovieCard from '../components/MovieCard';
@@ -24,7 +23,7 @@ const TEST_DATA = [
 
 export default function FavoritesPage() {
   return (
-    <Container maxWidth='sm'>
+    <Container>
       <NavBar />
       <Box>
         {TEST_DATA.map((movie) => {

@@ -1,6 +1,5 @@
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
 
 import NavBar from '../components/NavBar';
 import MovieCard from '../components/MovieCard';
@@ -84,9 +83,8 @@ export default function SearchResultsPage() {
   ]
 
   const [searchResultsList, setSearchResultsList] = useState(TEST_DATA)
-
   return (
-    <Container maxWidth='sm'>
+    <Container>
       <NavBar />
       <Box>
         {searchResultsList.map((movie) => {

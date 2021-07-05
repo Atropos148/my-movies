@@ -26,12 +26,12 @@ interface MovieProps {
 export default function MovieCard(props: MovieProps) {
   const classes = useStyles();
   return (
-    <Card className={classes.root} >
+    <Card className={classes.root}>
       <Grid container direction="row">
-        <Grid item xs={6}>
+        <Grid item xs={3}>
           <CardMedia image={props.posterLink} className={classes.media} />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={9}>
           <CardContent>
             <p>{props.title}</p>
             <p>{props.year}</p>
